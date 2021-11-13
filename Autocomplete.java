@@ -100,7 +100,7 @@ public class Autocomplete {
             terms[i] = new Term(query, weight);    // construct the term
         }
         
-        // read in queries from standard input and print out the top k matching terms
+        // Read in queries from standard input and print out the top k matching terms
         int k = Integer.parseInt(args[1]);
         Autocomplete autocomplete = new Autocomplete(terms);
         while (StdIn.hasNextLine()) {

@@ -38,11 +38,11 @@ import java.util.Comparator;
 
 public class BinarySearchDeluxe{
 
-    // Returns the index of the first key in a[] that equals the search key, or -1 if no such key.
+    // Returns the index of the first key in a[] that equals the search key, or -1 if no such key exists
     public static <Key> int firstIndexOf(Key[] a, Key key, Comparator<Key> comparator) {
         // First sort the array passed to this function
         // Autocomplete constructor also sorts array, but lexicographically
-        // Allow for a sort based upon choice comparator passed as parameter
+        // Allow for a sort based upon choice comparator passed as final parameter
         Arrays.sort(a, comparator);
 
         // Set up for modified binary search
@@ -65,7 +65,7 @@ public class BinarySearchDeluxe{
     }
 
     
-    // Returns the index of the last key in a[] that equals the search key, or -1 if no such key.
+    // Returns the index of the last key in a[] that equals the search key, or -1 if no such key exists
     public static <Key> int lastIndexOf(Key[] a, Key key, Comparator<Key> comparator) {
         // first sort the array passed to this function using chosen comparator
         Arrays.sort(a, comparator);
@@ -89,7 +89,7 @@ public class BinarySearchDeluxe{
         return found;
     }
 
-    // unit testing
+    // Unit testing
     public static void main(String[] args) {
     
         Term[] terms = new Term[5];
